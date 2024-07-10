@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS MY NUMBER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="guess">Guess The Number ( <span class="first">1</span> - <span class="last">100</span> )</h1>
+
+    <div class="input-div">
+     <input type="number" class="myNumber">
+     <button class="check">CHECK</button>
+     <button class="restart">RESTART</button>
+    </div>
+
+    <div class="declare">    
+     <h1 class="enter-number">Enter a number from 1 to 100</h1>
+     <h1 class="attempt">Number of Attempts: ( <span class="attempts-span">0</span> )</h1>
+     <h1 class="chance">You have <span class="chances-span">7</span>  chances to guess!</h1>
+    </div>
+
+   <div class="picture"> <img class="pic" src="./assets/guess-favicon.png" alt=""></div>
+
+    <audio src="./assets/Alkış Sesi.mp3" id="clapSound"></audio>
+
+  </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
