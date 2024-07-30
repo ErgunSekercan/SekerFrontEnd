@@ -1,0 +1,22 @@
+{
+    "books" : [
+        {
+    "id": "7376",
+      "bookName": "mahmut",
+      "author": "ben",
+      "category": "zczxc",
+      "writtenDate": 1950,
+      "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+      
+        },
+        {
+            "id": "7375",
+              "bookName": "mahmut",
+              "author": "ben",
+              "category": "zczxc",
+              "writtenDate": 1950,
+              "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
+              
+                }
+    ]
+}

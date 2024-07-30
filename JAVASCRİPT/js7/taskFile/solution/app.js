@@ -30,11 +30,13 @@ if(chance > 0){
             chance--
             attempt++
             lastNumber.innerHTML = input.value
+            lastNumber.style.color = "red"
         }else if(input.value < random){
             enterNumber.innerHTML = "Greater number please"
             chance--
             attempt++
             firstNumber.innerHTML = input.value
+            firstNumber.style.color = "red"
         }else if(input.value == random){
             enterNumber.innerHTML = "Congratulations! You guessed it right."
             chance--
