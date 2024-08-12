@@ -1,22 +1,44 @@
 {
-    "books" : [
-        {
-    "id": "7376",
-      "bookName": "mahmut",
-      "author": "ben",
-      "category": "zczxc",
-      "writtenDate": 1950,
+  "books": [
+    {
+      "bookName": "Kayıp Ada",
+      "author": "Sevgi",
+      "category": "Macera",
+      "writtenDate": "1975",
       "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif",
-      "action":""    
-        },
-        {
-            "id": "7375",
-              "bookName": "mahmut",
-              "author": "ben",
-              "category": "zczxc",
-              "writtenDate": 1950,
-              "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif"
-              
-                }
-    ]
+      "id": "7376"
+    },
+    {
+      "bookName": "Marsa Yolculuk",
+      "author": "Arzu",
+      "category": "Bilim Kurgu",
+      "writtenDate": "1960",
+      "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif",
+      "id": "f4e0"
+    },
+    {
+      "bookName": "The Shining",
+      "author": "Stephen King",
+      "category": "Korku",
+      "writtenDate": "2014",
+      "coverImage": "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg ",
+      "id": "6214"
+    },
+    {
+      "bookName": "Basamak",
+      "author": "Yılmaz",
+      "category": "Başarı",
+      "writtenDate": "1950",
+      "coverImage": "https://www.cihatayaz.com/wp-content/uploads/2017/06/slider_item_01.gif",
+      "id": "a350"
+    },
+    {
+      "id": "782a",
+      "bookName": "Gün Batımı",
+      "author": "Ali",
+      "category": "Biyografi",
+      "writtenDate": "1945",
+      "coverImage": "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg "
+    }
+  ]
 }
