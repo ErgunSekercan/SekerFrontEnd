@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            height: 850px;
+            width:550px;
+            border-radius: 50px;
+            
+            
+            
+        }  
+        .display{
+            background-color: aqua;
+            /* border-radius: 50px; */
+            height: 25%;
+            width: 550px;
+            color: white;
+            font-size: 80px;
+            display: flex;
+            align-items: last baseline;
+            justify-content: right;
+            border-radius: 50px 50px 0px 0px;
+            
+            
+        }  
+        .calculator{
+           
+            height: 70%;
+            width: 450px;            
+            
+            padding: 40px;           
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            display: grid;
+            grid-template-columns: repeat(4,auto);             
+            justify-content: space-between;
+            
+           
+
+            grid-template-areas: 
+            "ac plusMinus percentage division"
+            "seven eight nine multiplication"
+            "four five six minus"
+            "one two three plus"
+            "zero dot equal";
+        }
+        .circle{
+            background-color: rgb(53, 52, 52);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%; 
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            color: white;
+            font-size: 50px;          
+        }
+        .circle1{
+            background-color: grey;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+        }
+        .circle2{
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+        }
+        #zero{
+            height:100px ;
+            width: 200px;
+            border-radius: 50px 50px 50px 50px;
+            /* color: white; */
+            font-size: 50px;
+            
+            grid-column: 1 / 3 ;
+            
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- css grid yapısını kullanarak readme de linki olan  hesap makinesini oluşturunuz. -->
+    <div class="container">
+        <div class="display">0</div>
+        <div class="calculator" >
+        <button class="circle1 calBtn" id="ac" value="0">AC</button>
+        <button class="circle1 calBtn"id="plusMinus" value="+/-">+/-</button>
+        <button class="circle1 calBtn"id="percentage" value="%">%</button>
+        <button class="circle2 calBtn"id="division" value="/">/</button>
+        <button class="circle number calBtn"id="seven" value="7">7</button>
+        <button class="circle number calBtn"id="eight" value="8">8</button>
+        <button class="circle number calBtn"id="nine" value="9">9</button>
+        <button class="circle2 calBtn"id="multiplication" value="x">X</button>
+        <button class="circle number calBtn"id="four" value="4">4</button>
+        <button class="circle number calBtn"id="five" value="5">5</button>
+        <button class="circle number calBtn"id="six" value="6">6</button>
+        <button class="circle2 calBtn"id="minus" value="-">-</button>
+        <button class="circle number calBtn"id="one" value="1">1</button>
+        <button class="circle number calBtn"id="two" value="2">2</button>
+        <button class="circle number calBtn"id="three" value="3">3</button>        
+        <button class="circle2 calBtn"id="plus" value="+">+</button>
+        <button class="circle number calBtn"id="zero" value="0">0</button>
+        <button class="circle calBtn"id="dot" value=".">.</button>
+        <button class="circle calBtn"id="equal" value="=">=</button>
+        </div>
+    </div>
+</body>
+
+<script src="hesapMakinesi.js"></script>
+</html>
