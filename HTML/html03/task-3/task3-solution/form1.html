@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-1</title>
+
+   
+  </head>
+  <body>
+    <h2 align="center">BT Tasarım Programı Kurulum ve Satış Sözleşmesi</h2>
+    <!-- <form action="./Form_result.html" method="get"> -->
+    <form action="./Form_result.html" method="get">
+      <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="checkbox" name="kabul" id="onay" value="onay" />
+        <label for="onay"
+          >Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini
+          onaylıyorum.</label
+        ><br /><br />
+        <button type="Formu Kaydet">Formu Kaydet</button>
+        <button type="reset">Reset</button><br /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+
+        <label for="ID">Form Güvenlik ID</label>
+        <input
+          type="text"
+          id="ID"
+          placeholder="Lütfen ID Giriniz"
+          name="Form Security ID"
+        /><br /><br />
+
+        <label for="Ad">Ad</label>
+        <input
+          type="text"
+          id="Ad"
+          placeholder="Lütfen Adınızı Giriniz"
+          name="First Name"
+        /><br /><br />
+
+        <label for="Soyad">Soyad</label>
+        <input
+          type="text"
+          id="Soyad"
+          placeholder="Lütfen Soyadınızı Giriniz"
+          name="Last Name"
+        /><br /><br />
+
+        <label for="Yaş">Yaş</label>
+        <input
+          type="number"
+          id="Yaş"
+          placeholder="Lütfen Yaşınızı Giriniz"
+          name="Age"
+        /><br /><br />
+
+        <label for="email">Mail Adresi</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="example@example.com"
+          name="email"
+        /><br /><br />
+
+        <label for="foto">Fotoğraf Ekle</label>
+        <button type="file" id="foto" name="fotoğraf">Dosya Seç</button> Dosya
+        Seçilemedi
+      </fieldset>
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <h4>Buradaki Alanlar Mesleki Dneyimi Kapsar</h4>
+        <label for="date1">Sektöre Giriş Tarihi</label>
+        <input type="date" id="date1" name="Sektöre Giriş Tarihi" /><br /><br />
+        <label for="date1">Sektör Deneyimi</label>
+
+        <input type="radio" id="1-3" name="Sektör Deneyimi" value="1-3 yıl" />
+        <label for="1-3">1-3 yıl</label><br />
+
+        <input type="radio" id="3-5" name="Sektör Deneyimi" value="3-5 yıl" />
+        <label for="3-5">3-5 yıl</label><br />
+
+        <input type="radio" id="5-15" name="Sektör Deneyimi" value="5-15 yıl" />
+        <label for="5-15">5-15 yıl</label><br />
+
+        <input
+          type="radio"
+          id="15 yıl üzeri"
+          name="Sektör Deneyimi"
+          value="15 yıl üzeri yıl"
+        />
+        <label for="15 yıl üzeri">15 yıl ve üzeri</label><br /><br />
+
+        <label for="Dil">Programlama Dilleri</label>
+
+        <select name="Programlama Dilleri" id="Dil" multiple="multiple">
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="C#">C#</option>
+          <option value="Java">Java</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <select name="Sözleşme" id="Söz" multiple="multiple">
+          <option value="Metin" style="width: 200px">
+            <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br />
+            <p>Porro perferendis officia autem quo aliquid adipisc</p>
+            i eos maxime odio voluptas illum vero nisi officiis alias
+            exercitationem distinctio reiciendis, earum quod obcaecati!
+          </option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Mail Listesi</legend>
+
+        <label for="Evet"
+          >Mail Listesine Katılmak <strong>İstiyorum</strong></label
+        >
+        <input
+          type="radio"
+          id="Evet"
+          name="Mail Listesine Katılmak"
+          value="1"
+          checked
+        /><br />
+
+        <label for="Hayır"
+          >Mail Listesine Katılmak
+          <strong><ins>İstemiyorum</ins> </strong></label
+        >
+        <input
+          type="radio"
+          id="Hayır"
+          name="Mail Listesine Katılmak"
+          value="1"
+        /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

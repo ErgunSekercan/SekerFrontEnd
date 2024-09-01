@@ -1,0 +1,131 @@
+<!-- 
+    HTML nedir?
+HTML, Hyper Text Markup Language anlamına gelir
+1991 tarihinde	Tim Berners-Lee tarafından hayatımıza dahil edilmiştir
+HTML, Web sayfaları oluşturmak için standart biçimlendirme dilidir
+HTML bir Web sayfasının yapısını açıklar
+HTML bir dizi öğeden oluşur
+HTML öğeleri tarayıcıya içeriğin nasıl görüntüleneceğini söyler
+HTML öğeleri, "bu bir başlıktır", "bu bir paragraftır", "bu bir bağlantıdır" vb. gibi içerik parçalarını etiketler. -->
+
+
+<!-- ************************************************** -->
+
+<!-- ünlem + enter tuşları boş html structure oluşturabiliriz -->
+<!DOCTYPE html>  
+<!-- html sürümü  -->
+
+<html lang="en">
+  <!-- html genel kapsayıcıdır bütün dökümanı ifade eder. lang kullanacağımız dil beyanıdır  -->
+
+  <head>
+    <!-- genelde ayar ve bağlantılarımızı yaptığımız alandır.  -->
+    <meta charset="UTF-8" />
+    <!-- kullanılacak karakter  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="bu bir yazılım öğrenme sitesidir" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>sayfa adı</title>
+    <link rel="shortcut icon" href="36.jpg" type="image/x-icon" />
+    
+<!-- internal css  -->
+    <style>
+        .ali{
+            color:blue
+        }
+
+        h2#baslık{
+            background-color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="deneme.css">
+
+  </head>
+
+  <body>
+    <!-- <h1>ben bir başlığım</h1>  -->
+<!-- shift + alt + alt ok tuşu bulunduğunuz satırı alta kopyalar -->
+
+    <!--!  heading-->
+    <!-- kısa yol      h$*6{Bu bir başlıktır}    -->
+   
+    <h1>bu bir başlıktır</h1> <!-- sayfada tek olacak , seo bu başlığa bakar  -->
+    <h2 class="ali" style="color:green">bu bir başlıktır</h2>
+    <h2 id="baslık">bu bir başlıktır</h2>
+    <h3>bu bir başlıktır</h3>
+    <h4>bu bir başlıktır</h4>
+    <h5>bu bir başlıktır</h5>
+    <h6 id="baslık">bu bir başlıktır</h6>
+
+    <hr> 
+    <br>
+    <hr>
+
+    <!--! paragraf -->
+
+   <p style="color:red">merhaba dünya</p>
+   <p class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error perspiciatis, beatae et aliquam ipsum minima debitis dolor porro totam, in eligendi. Blanditiis consectetur perspiciatis natus, excepturi cum sed tempore dolorum nostrum quae soluta earum omnis aut aspernatur exercitationem, recusandae odio laboriosam deserunt commodi eveniet et ipsa maxime? Tempore, recusandae inventore.</p>
+
+   <pre>  <!-- aslı korunmuş paragraflar -->
+    Korkma, sönmez bu şafaklarda yüzen al sancak;
+    Sönmeden yurdumun üstünde tüten en son ocak.
+    O benim milletimin yıldızıdır, parlayacak;
+    O benimdir, o benim milletimindir ancak.</pre>
+
+    <hr>
+    <!--! resimler -->
+    <img src="./assets/htmlStructure.webp" alt="html structure" width="500px"  >
+
+    <img src="https://cdn.pixabay.com/photo/2018/01/19/08/49/tree-3091981_960_720.jpg" alt="manzara" width="300px">
+
+    <hr>
+
+    <!--! formating -->
+
+    <!-- 
+        <b> -           Bold text
+        <strong> -      Important text
+        <i> -           Italic text
+        <em> -          Emphasized text
+        <mark> -        Marked text
+        <small> -       Smaller text
+        <del> -         Deleted text
+        <ins> -         Inserted text
+        <sub> -         Subscript text
+        <sup> -         Superscript text -->
+
+    <p>Lorem  <b>ipsum dolor</b>  sit amet.</p>
+    <p>Lorem  <strong>ipsum dolor</strong>  sit amet.</p> <!-- seo için -->
+    <p>Lorem  <i>ipsum dolor</i>  sit amet.</p>
+    <p>Lorem  <em>ipsum dolor</em>  sit amet.</p><!-- seo için -->
+
+    <p>Lorem  <mark>ipsum dolor</mark>  sit amet.</p>
+    <p>Lorem  <small>ipsum dolor</small>  sit amet.</p>
+    <p>Lorem  <del>ipsum dolor</del> euro  sit amet.</p>
+    <p>Lorem  <ins>ipsum dolor</ins> euro  sit amet.</p>
+    <p>Lorem  H<sub>2</sub>O euro  sit amet.</p>
+    <p>Lorem  m<sup>2</sup> euro  sit amet.</p>
+
+    <!-- ! styles -->
+    <!-- inline, internal, external -->
+
+    <p style="color:red">merhaba dünya</p> <!-- inline  -->
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--  -->
+
+
+   
+   
+
+
+    
+  </body>
+</html>

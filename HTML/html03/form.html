@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- block -->
+    <!--<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>  -->
+
+    <!-- inline -->
+    <!-- <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var> -->
+
+    <!--?   input içinde kullanılabilecek attribute ler =>   reguired, readonly, disabled, novalidate, autocomplate, autofocus, selected, multiple , checked, maxlength, size, placeholder, list ,min ,max, step -->
+
+    <form action="./Form_result.html" method="get">
+      <fieldset>
+        <input type="submit" value="Submit" />
+        <button type="reset">Reset</button>
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+
+          <!--! label ve input arasında ilişki kurmak için label etiketinde for attribute na bir değer verilir. aynı değer input etiketinde id attribute na da verilir. bu şekilde eşleştirme yapılmış olur -->
+
+          <label for="ad">İsim:</label>
+          <input
+            type="text"
+            id="ad"
+            placeholder="lütfen adınızı yazınız"
+            name="firstName"
+            required
+            autofocus autocomplate="off"
+          />
+          <br />
+
+          <label for="soyad">soyisim:</label>
+          <input
+            type="text"
+            id="soyad"
+            placeholder="lütfen soyadınızı yazınız"
+            name="lastName"
+            required
+            disabled
+          />
+          <br />
+
+          <label for="tckn">TCKN</label>
+          <input
+            type="text"
+            id="tckn"
+            placeholder="lütfen soyadınızı yazınız"
+            name="tckn"
+            required
+          />
+          <br />
+
+          <label for="age">yasınız</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="lütfen soyadınızı yazınız"
+            name="age"
+            required
+            min="30"
+            max="55"
+            step="2"
+          />
+          <br />
+
+          <label for="email">email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="lütfen soyadınızı yazınız"
+            name="email"
+            required
+          />
+          <br />
+
+          <label for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="lütfen soyadınızı yazınız"
+            name="password"
+            required
+          />
+          <br />
+
+          <label for="">doğum tarihi</label>
+          <input type="datetime-local" name="tarih" /><br />
+          input
+
+          <label for="gender1">cinsiyet</label>
+          <label for="erkek">erkek</label>
+          <input type="radio" id="erkek" name="gender" value="erkek" />
+          <label for="kadın">kadın</label>
+          <input type="radio" id="kadın" name="gender" value="kadın" />
+        </fieldset>
+        <fieldset>
+          <legend>Tecrübeler</legend>
+          <label for="">Bilinen yazılım dilleri</label><br />
+
+          <input type="checkbox" name="dil1" id="html" value="html" />
+          <label for="html">html</label>
+
+          <input type="checkbox" name="dil2" id="" value="css" checked />
+          <label for="">css</label>
+          <input type="checkbox" name="dil3" id="" value="js" />
+          <label for="">js</label>
+
+          <label for="">tecrübe süresi</label>
+          <select name="tecube" id="">
+            <option value="1">1 yıl</option>
+            <option value="2">2 yıl</option>
+            <option value="3">3 yıl</option>
+            <option value="4">4 yıl</option></select
+          ><br />
+
+          <!-- inputtaki list ile datalistteki id eşleşecek -->
+          <label for="">Otomobil</label>
+          <input type="text" name="arabalar" list="vehicle" />
+
+          <datalist id="vehicle">
+            <option value="mercedes">mercedes</option>
+            <option value="audi">audi</option>
+            <option value="lada">lada</option>
+            <option value="bmw">bmw</option></datalist
+          ><br />
+
+          <label for="">tatlılar</label>
+          <select name="tatlılar" id="">
+            <optgroup label="sütlü tatlılar">
+              <option value="sütlaç">sütlaç</option>
+              <option value="kazan dibi">kazan dibi</option>
+            </optgroup>
+            <optgroup label="şerbetli tatlılar">
+              <option value="1">baklava</option>
+              <option value="2">şöbiyet</option>
+            </optgroup></select
+          ><br />
+
+          <label for="">foto yükle</label>
+          <input type="file" name="foto" />
+          <p>jpeg formatında olmalıdır</p>
+
+          <label for="">color</label>
+          <input type="color" name="renk" /><br /><br />
+
+          <label for="">telefon</label>
+          <input
+            type="tel"
+            name="phone"
+            pattern="[0]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="başında sıfır olmadan giriniz"
+          />
+          <br />
+          <label for="">country code</label>
+          <input type="text" pattern="[A-Z]{3}-[A-Za-z0-9]{5}" />
+          <br />
+
+          <label for="">volume</label>
+          <input type="range" name="volume" min="50" max="80" />
+
+          <br />
+
+          <label for="">search</label>
+          <input type="search" />
+
+          <!-- <input type="url" name="" id=""> -->
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>

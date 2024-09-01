@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-2</title>
+  </head>
+  <body>
+    <div align="center" style="background-color: rgb(205, 240, 101);">
+      <h3 style="color: red;">Personal Details</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="" name="Name" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="text"
+        id="password"
+        placeholder=""
+        name="Password"
+      /><br /><br />
+
+      <label for="email">Soyad</label>
+      <input type="text" id="email" placeholder="" name="Email" /><br /><br />
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="Gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="Gender" value="Female" />
+      <label for="female">Female</label><br /><br />
+      <label for="contact">Contact#:</label>
+      <input type="text" id="contact" name="cont" value="" />
+      <h3 style="color: red;">Educational Qualification</h3>
+      <label for="Degree">Degree:</label>
+      <select name="deg" id="Degree">
+        <optgroup label="Degrees">
+          <option value="Select Group">--Select Group--</option>
+        </optgroup></select
+      ><br /><br />
+      <label for="Engineering">Engineering:</label>
+      <select name="eng" id="Engineering">
+        <optgroup label="Degrees">
+          <option value="Select Group">--Select Group--</option>
+        </optgroup></select
+      ><br /><br />
+
+      <label for="hobbies">Hobbies</label>
+      <input
+        type="checkbox"
+        id="hobbies"
+        name="Playing chess"
+        value="1"
+      />Playing chess
+      <input
+        type="checkbox"
+        id="hobbies"
+        name="Reading books"
+        value="2"
+      />Reading Books <br /><br />
+      <h3 style="color: red;">Address</h3>
+      <input style="width: 250px; height: 75px" /><br /><br />
+      <label for="foto">Attach Resume</label>
+      <button type="file" id="foto" name="fotoğraf">Choose File</button> No file
+      chosen <br /><br />
+      <button
+        type="submit"
+        id="submit"
+        name="sub"
+        style="width: 150px; height: 30px; background-color: orange; color: white;"
+      >
+        SUBMİT =>
+      </button>
+    </div>
+  </body>
+</html>

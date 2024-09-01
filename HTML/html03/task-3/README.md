@@ -1,0 +1,1 @@
+** stillere ve renklere takılmadan html öğelerini kullanabilmeyi geliştirmek için hazırlanmış bir alıştırmadır. iki adet form vardır. kolaylıklar dilerim
