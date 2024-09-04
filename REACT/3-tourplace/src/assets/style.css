@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ACE0F9;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;    
+    font-family: "Amatic SC", sans-serif;    
+}
+.navbar a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem; 
+    font-weight: bold;   
+}
+.navbar a:hover{
+    background-color: #ACE0F9;
+    color: black;
+}
+
+/* header */
+
+.header{
+    font-family: "Amatic SC", sans-serif ;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 900;
+}
+/* maincontainer */
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* cards */
+.cards{
+    background-color: black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+    overflow: hidden;
+    position: relative;
+
+  
+}
+
+.cards:hover .card-over{
+    transform: translateY(0%);
+
+}
+
+.title{
+    color:#ACE0F9;
+    font-size: 1.5rem;
+    font-family: "Amatic SC", sans-serif ;
+    padding: 1rem;
+
+
+}
+
+img{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+ 
+}
+img:hover{
+    filter:grayscale(100%);
+    
+}  
+
+
+.card-over{
+    color:white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform: translateY(100%);
+    transition:transform .7s ;
+    background-color: rgba(0,0,0,.4);
+    z-index : 1;
+    text-align: justify;
+
+ 
+}
