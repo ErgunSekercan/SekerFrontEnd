@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({veri}) => {
   console.log(veri);
-  const {desc, image, title} = veri
+  const {desc, image, title} = veri;
   return (
     <div className='cards'>
       <div className='title'>
