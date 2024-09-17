@@ -21,7 +21,7 @@ export const languages = [
   {
     name: "css",
     img: css,
-    options: ["Website Design", "1994", "Håkon Wium Lie"],
+    options: ["Website Design", "1994", "Håkon Wium Lie", "usa"],
   },
   {
     name: "python",
@@ -41,7 +41,7 @@ export const languages = [
   {
     name: "go",
     img: go,
-    options: ["Network", "2009", "Robert Griesemer"],
+    options: ["Network", "2009", "Robert Griesemer", "new"],
   },
   {
     name: "php",
