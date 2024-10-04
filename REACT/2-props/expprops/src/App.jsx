@@ -1,17 +1,21 @@
+import Person from "./components/Person"
+import {data}  from "./utils/data.js"
+
 
 
 const App = () => {
-  
-  console.log(data);
+
+  console.log(data)
 
   return (
-    <>
-      <div>
-
-      
-      </div>  
-    </>
+    <div>
+    <Person veri = {data}/>
+    
+    </div>
   )
 }
 
 export default App
+
+
+
